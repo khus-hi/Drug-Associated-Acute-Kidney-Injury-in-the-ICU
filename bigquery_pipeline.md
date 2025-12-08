@@ -2,9 +2,9 @@
 flowchart TD
 
 A["MIMIC-IV v3.1 Tables: patients, admissions, labevents, chartevents, outputevents, prescriptions, derived"]
-    --> B["1. ICU Cohort (cohort_icu_v2)"]
+    --> B["ICU Cohort (cohort_icu_v2)"]
 
-B --> C["2. Baseline SCr (baseline_scr_v2)"]
+B --> C["Baseline SCr (baseline_scr_v2)"]
 
 C --> D["KDIGO AKI Phenotyping"]
 
