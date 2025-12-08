@@ -146,20 +146,9 @@ A unified `ColumnTransformer` handles both branches cleanly.
 
 The primary model architecture:
 
-```python
-CatBoostClassifier(
-    iterations=2000,
-    learning_rate=0.05,
-    depth=6,
-    loss_function="Logloss",
-    eval_metric="AUC",
-    class_weights={0:1.0, 1:(neg/pos)},
-    od_type="Iter",
-    od_wait=50,
-    task_type="GPU"
-)```
+<img width="433" height="184" alt="image" src="https://github.com/user-attachments/assets/e28a6278-1dd2-4d4d-be98-b77856eee9c7" />
 
-# **7. Model Evaluation**
+## **7. Model Evaluation**
 
 ### **Metrics Computed**
 The following metrics are calculated for both baseline and enriched models:
