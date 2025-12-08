@@ -243,19 +243,19 @@ These are used for reporting, manuscript preparation, and external validation.
 
 To ensure consistent and transparent modeling:
 
-- Fixed random seeds** for deterministic splits and model training  
-- No post-drug data** is used in features (strict leakage control)  
-- All enriched features** come from data in the **24 hours before drug_start_time**  
-- BigQuery tables are versioned** (`_v1`, `_v2`) to preserve lineage  
-- Same preprocessing pipeline** used for all models  
-- Same feature selection logic** applied across baseline and enriched datasets  
+- **Fixed random seeds** for deterministic splits and model training  
+- **No post-drug data** is used in features (strict leakage control)  
+- **All enriched features** come from data in the **24 hours before drug_start_time**  
+- **BigQuery tables are versioned** (`_v1`, `_v2`) to preserve lineage  
+- **Same preprocessing pipeline** used for all models  
+- **Same feature selection logic** applied across baseline and enriched datasets  
 
 ---
 
 # 📌 **Final Summary**
 
-The modeling pipeline converts raw ICU EHR data into a robust, leakage-free, temporally aligned dataset for predicting **drug-associated acute kidney injury  
-Enriched features—especially urine output trends, severity scores, and early lab changes—lead to **substantial performance gains**, nearly **doubling recall while maintaining high precision.
+The modeling pipeline converts raw ICU EHR data into a robust, leakage-free, temporally aligned dataset for predicting **drug-associated acute kidney injury**.  
+Enriched features—especially urine output trends, severity scores, and early lab changes—lead to **substantial performance gains**, nearly **doubling recall** while maintaining high precision.
 
 This provides a strong foundation for developing early-warning systems and supporting nephrotoxin stewardship in the ICU.
 
