@@ -106,7 +106,7 @@ This table is used for:
 
 ---
 
-## **8. Enriched Feature Engineering **
+## **8. Enriched Feature Engineering**
 A secondary modeling table adds **24-hour pre-drug temporal features**, including:
 - rolling labs (SCr, BUN, K, bicarbonate)  
 - rolling vitals (HR, MAP, SpO₂)  
