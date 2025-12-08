@@ -1,4 +1,4 @@
-# 📊 **Pipeline Flow Diagram Explanation**
+# 📊 **Bigquery Pipeline**
 
 The flowchart above illustrates the **end-to-end BigQuery data pipeline** used to construct the analytic datasets for the Drug-Associated AKI study. The pipeline moves from raw MIMIC-IV data to fully engineered features used in machine-learning models.
 
