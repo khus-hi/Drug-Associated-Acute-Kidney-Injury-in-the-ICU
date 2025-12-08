@@ -157,8 +157,8 @@ CatBoostClassifier(
     od_type="Iter",
     od_wait=50,
     task_type="GPU"
-)
-'''
+)```
+
 # **7. Model Evaluation**
 
 ### **Metrics Computed**
