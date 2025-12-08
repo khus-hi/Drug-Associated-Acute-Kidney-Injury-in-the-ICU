@@ -148,7 +148,7 @@ The primary model architecture:
 
 <img width="433" height="184" alt="image" src="https://github.com/user-attachments/assets/e28a6278-1dd2-4d4d-be98-b77856eee9c7" />
 
-## **7. Model Evaluation**
+# **7. Model Evaluation**
 
 ### **Metrics Computed**
 The following metrics are calculated for both baseline and enriched models:
