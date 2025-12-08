@@ -19,7 +19,7 @@ These are the **raw EHR inputs** for all downstream processing.
 
 ---
 
-## **2. ICU Cohort Construction (`cohort_icu_v2`)**
+## **2. ICU Cohort Construction**
 A clean cohort is created by:
 - selecting adult patients (age ≥18)  
 - keeping the **first ICU stay** per patient  
@@ -29,7 +29,7 @@ This forms the **base population** from which AKI and ADE events are derived.
 
 ---
 
-## **3. Baseline Serum Creatinine (`baseline_scr_v2`)**
+## **3. Baseline Serum Creatinine**
 For each patient, baseline kidney function is computed using:
 1. the lowest SCr within 7 days before ICU admission, or  
 2. the first SCr during hospitalization  
@@ -52,7 +52,7 @@ If none exist, the value is marked as missing. Baseline SCr is required for KDIG
 - `aki_uo_events_v2`: detects oliguria/anuria per KDIGO thresholds  
 - `aki_uo_labels_v2`: produces UO-based AKI stage + onset  
 
-### **4.3 Full KDIGO AKI (`aki_full_kdigo_v2`)**
+### **4.3 Full KDIGO AKI **
 Serum creatinine and urine output labels are merged to generate:
 - unified AKI stage  
 - unified AKI onset  
@@ -78,7 +78,7 @@ These drug episodes form the basis of the AKI-onset relative timing (ADE definit
 
 ---
 
-## **6. Confounders (`confounders_v2`)**
+## **6. Confounders**
 Clinical conditions that modify AKI risk are extracted:
 - sepsis (Sepsis-3)  
 - mechanical ventilation  
@@ -90,7 +90,7 @@ These ensure the modeling dataset properly adjusts for illness severity and comp
 
 ---
 
-## **7. ADE Modeling Table (`final_ade_model_v2`)**
+## **7. ADE Modeling Table**
 This is the main dataset for analysis and baseline modeling.  
 Each row represents a **drug exposure episode** with:
 - demographics and comorbidities  
@@ -106,7 +106,7 @@ This table is used for:
 
 ---
 
-## **8. Enriched Feature Engineering (`ade_feature_enriched_v1`)**
+## **8. Enriched Feature Engineering **
 A secondary modeling table adds **24-hour pre-drug temporal features**, including:
 - rolling labs (SCr, BUN, K, bicarbonate)  
 - rolling vitals (HR, MAP, SpO₂)  
